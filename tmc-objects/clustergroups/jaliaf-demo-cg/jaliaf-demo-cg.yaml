@@ -1,0 +1,8 @@
+typeMeta:
+  kind: ClusterGroup
+  version: v1alpha
+  package: vmware.tanzu.mc.v1alpha.clustergroup
+objectMeta:
+  description: demo cluster group
+fullName:
+  name: jaliaf-demo-cg

@@ -1,0 +1,16 @@
+policy:
+  typeMeta:
+    kind: Policy
+    version: v1alpha
+    package: vmware.tanzu.mc.v1alpha.workspace.policy
+  fullName:
+    name: allow-registry-policy
+    workspaceName: jaliaf-demo-ws
+  spec:
+    policyType: image-policy
+    recipeName: allow-registry
+    inputValues:
+      registry_repos:
+        list:
+          values:
+          - str: foo

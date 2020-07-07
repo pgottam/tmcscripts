@@ -1,0 +1,27 @@
+typeMeta:
+  kind: Cluster
+  version: v1alpha
+  package: vmware.tanzu.mc.v1alpha.cluster
+fullName:
+  location: global
+  name: jaliaf-1
+objectMeta:
+  group: jaliaf-cg
+spec:
+  clusterGroupName: jaliaf-cg
+  provisionedcluster:
+    accountName: lcm-dev-001
+    cloudProviderConfig:
+      awsConfig:
+        azList:
+        - us-west-2a
+        controlPlaneVmFlavor: t2.medium
+        networkSpec:
+          vpc:
+            cidrBlock: 10.0.0.0/16
+        region: us-west-2
+        sshKeyName: olympus-default
+    networkConfig:
+      podCidr: 192.168.0.0/16
+      serviceCidr: 10.96.0.0/12
+    version: 1.17.2-1-amazon2
